@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #0d0d0d;
+    border-bottom: 1px solid #222;
+}
+
+header h2 {
+    color: #00eaff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background: radial-gradient(circle at 80% 40%, #063b44, #080808 45%);
+}
+
+.small {
+    color: #00eaff;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #00eaff;
+}
+
+.hero h2 {
+    font-size: 28px;
+    color: #cccccc;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px 0;
+    color: #aaaaaa;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00eaff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.title {
+    text-align: center;
+    color: #00eaff;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card,
+.project,
+.education-box {
+    background: #111111;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card:hover,
+.project:hover {
+    transform: translateY(-5px);
+    border-color: #00eaff;
+}
+
+.project h3,
+.education-box h3 {
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+.project p,
+.education-box p {
+    color: #aaaaaa;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px;
+    color: #bbbbbb;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #050505;
+    color: #777;
+}
