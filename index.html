@@ -8,8 +8,51 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
+<script>
+window.addEventListener("load", function () {
+    const loader = document.getElementById("nexroLoader");
+    if (loader) {
+        loader.style.display = "none";
+    }
+});
+</script>
 <body>
+ <body>
 
+  
+
+
+
+
+
+
+  <!-- Aapka main content -->
+  
+
+<!-- NEXORA LOADING SCREEN -->
+<div class="nexora-loader" id="nexoraLoader">
+ <style>
+#nexoraLoader {
+    display: none !important;
+}
+</style>
+    <div class="loader-content">
+
+        <div class="loader-logo">N<span>.</span></div>
+
+        <h2>NEXORA</h2>
+        <p>BUILDING THE FUTURE</p>
+
+        <div class="loader-ring"></div>
+
+        <div class="loader-track">
+            <div class="loader-progress"></div>
+        </div>
+
+        <span class="loader-status">INITIALIZING...</span>
+
+    </div>
+</div>
 <header>
     <h2>NEXORA</h2>
     <button class="menu-btn" id="menuBtn">☰</button>
@@ -25,6 +68,70 @@
     </nav>
 </header>
 
+<!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+    <div class="projects-container">
+
+        <p class="section-label">MY WORK</p>
+        <h2>New<span>Projects</span></h2>
+        <p class="projects-intro">
+            Here are some projects I'm learning and building.
+        </p>
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-icon">⌘</div>
+                <p class="project-number">PROJECT 01</p>
+                <h3>Personal Portfolio</h3>
+                <p class="project-description">
+                    A personal website to showcase my skills,
+                    projects and professional profile.
+                </p>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="#" class="project-link">View Project ↗</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-icon">ϟ</div>
+                <p class="project-number">PROJECT 02</p>
+                <h3>Electrical Circuit Model</h3>
+                <p class="project-description">
+                    An educational project exploring basic
+                    electrical circuits and components.
+                </p>
+                <div class="project-tags">
+                    <span>Electrical</span>
+                    <span>Circuits</span>
+                </div>
+                <a href="#" class="project-link">View Project ↗</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-icon">&lt;/&gt;</div>
+                <p class="project-number">PROJECT 03</p>
+                <h3>Python Mini Project</h3>
+                <p class="project-description">
+                    A simple Python project to practise
+                    programming and problem-solving.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Programming</span>
+                </div>
+                <a href="#" class="project-link">View Project ↗</a>
+            </div>
+
+        </div>
+    </div>
+</section>
 <section id="home" class="hero">
     <div>
         <p class="small">HELLO, I'M</p>
@@ -49,7 +156,6 @@
         I am continuously improving my technical and practical skills.
     </p>
 </section>
-
 <section id="skills">
     <h2 class="title">My Skills</h2>
 
@@ -89,7 +195,7 @@
 
     <div class="education-box">
         <h3>Electrical Engineering</h3>
-        <p>Polytechnic Student</p>
+        
         <p>Currently pursuing Electrical Engineering.</p>
     </div>
 </section>
@@ -111,10 +217,39 @@
 
 <footer>
     <p>© 2026 Akhilesh Kumar | Electrical Engineering</p>
-</footer>ctrical Engineering</p>
+
 </footer>
+
 
 <script src="scripts.js"></script>
 
+<!-- Mouse Following Glow -->
+<div class="mouse-glow"></div>
+
+<script>
+const glow = document.querySelector(".mouse-glow");
+
+if (glow) {
+    document.addEventListener("mousemove", function (event) {
+        glow.style.left = event.clientX + "px";
+        glow.style.top = event.clientY + "px";
+    });
+
+    document.addEventListener("mouseenter", function () {
+        glow.style.opacity = "1";
+    });
+}
+</script>
+</body>
+</body>
+</html>
+<script>
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("nexroLoader");
+      if (loader) {
+        loader.style.display = "none";
+      }
+    });
+  </script>
 </body>
 </html>
